@@ -3,7 +3,7 @@
 /* Import font */
 @font-face {
     font-family: "Red Hat Text";
-    src: url('./assets/fonts/RedHatText-VariableFont_wght.ttf') format("truetype");
+    src: url('/assets/fonts/RedHatText-VariableFont_wght.ttf') format("truetype");
     font-weight: 100 900;
     font-style: normal;
 }
