@@ -15,19 +15,19 @@ function Card({onAddToCart, onDecrease, name, category, price, mobileImg, tablet
                 <div className="absolute w-2/3 -bottom-[21.6px] left-1/2 -translate-x-1/2 rounded-3xl">
                 {quantity === 0 ? (
                         <div onClick={onAddToCart} className="cursor-pointer flex items-center justify-center px-5 py-2.5 gap-2.5 bg-white border-2 rounded-3xl border-solid border-rose-400 hover:border-red transition-all duration-300">
-                            <img src="./src/assets/images/icon-add-to-cart.svg" alt="cart icon"/>
+                            <img src="/assets/images/icon-add-to-cart.svg" alt="cart icon"/>
                             <span className="font-semibold text-black">Add to Cart</span>
                         </div>
                     ) : (
                         <div className="flex items-center justify-between px-3 py-2.5 bg-red text-white rounded-3xl border-2 border-solid border-red">
                             <button type="button" onClick={onDecrease} className="cursor-pointer w-5 h-5 rounded-full border-2 border-solid border-white flex items-center justify-center">
-                                <img src="./src/assets/images/icon-decrement-quantity.svg" alt="icon decrement"/>
+                                <img src="/assets/images/icon-decrement-quantity.svg" alt="icon decrement"/>
                             </button>
 
                             <p>{quantity}</p>
 
                             <button type="button" onClick={onAddToCart} className="cursor-pointer w-5 h-5 rounded-full border-2 border-solid border-white flex items-center justify-center">
-                                <img src="./src/assets/images/icon-increment-quantity.svg" alt="icon increment"/>
+                                <img src="/assets/images/icon-increment-quantity.svg" alt="icon increment"/>
                             </button>
                         </div>
                     )
