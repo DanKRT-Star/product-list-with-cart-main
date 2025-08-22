@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Import font */
+@font-face {
+    font-family: "Red Hat Text";
+    src: url('./assets/fonts/RedHatText-VariableFont_wght.ttf') format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@theme {
+    --font-red-hat: "Red Hat Text", sans-serif, system-ui;
+
+    /* Primary */
+    --color-red: hsl(14, 86%, 42%);
+    --color-green: hsl(159, 69%, 38%);
+
+    /* Rose scale */
+    --color-rose-50: hsl(20, 50%, 98%);
+    --color-rose-100: hsl(13, 31%, 94%);
+    --color-rose-300: hsl(14, 25%, 72%);
+    --color-rose-400: hsl(7, 20%, 60%);
+    --color-rose-500: hsl(12, 20%, 44%);
+    --color-rose-900: hsl(14, 65%, 9%);
+}
+
+* {
+    box-sizing: border-box
+}
+
+html, body, #root {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+    overflow: auto;
+}
+
+.confirmedLayout {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.confirmedLayout.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: var(--color-rose-50);
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: var(--color-rose-300);
+  border-radius: 6px;        
+}
