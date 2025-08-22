@@ -37,7 +37,7 @@ function CartList({onRemoveItem, cart = [], currentTotalQuantity = 0, currentTot
                     </div>
 
                     <div className="flex items-center justify-center gap-2.5 bg-rose-50 rounded-md py-3 mb-5">
-                        <img src="./src/assets/images/icon-carbon-neutral.svg" alt="icon carbon neutral"/>
+                        <img src="/assets/images/icon-carbon-neutral.svg" alt="icon carbon neutral"/>
                         <p>This is a <span className="font-semibold">carbon-neutral</span> delivery</p>
                     </div>
 

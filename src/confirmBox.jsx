@@ -7,7 +7,7 @@ function ConfirmBox({cart = [], totalPrice, setCart}) {
     return (
         <div className="confirmedLayout fixed z-50 pt-20 top-0 left-0 bg-black/50 w-screen h-screen md:flex md:items-center md:justify-center overflow-auto md:pt-0">
             <div className="w-full rounded-t-2xl bg-white p-5 flex  flex-col gap-5 items-start md:max-w-96 md:rounded-2xl">
-                <img className="mt-5" src="./src/assets/images/icon-order-confirmed.svg" alt="confirm icon"/>
+                <img className="mt-5" src="/assets/images/icon-order-confirmed.svg" alt="confirm icon"/>
 
                 <div>
                     <h1 className="text-3xl font-bold">Order Confirmed</h1>
