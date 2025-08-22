@@ -25,7 +25,7 @@ function CartList({onRemoveItem, cart = [], currentTotalQuantity = 0, currentTot
                                 </p>
                                 </div>
                                 <button type="button" onClick={() => onRemoveItem(item.name)} className="cursor-pointer hover:brightness-50 rounded-full border-2 border-solid border-rose-400 w-5 h-5 flex items-center justify-center transition-all duration-300">
-                                    <img src="./src/assets/images/icon-remove-item.svg" alt="remove item" />
+                                    <img src="/assets/images/icon-remove-item.svg" alt="remove item" />
                                 </button>
                             </div>
                         ))}
