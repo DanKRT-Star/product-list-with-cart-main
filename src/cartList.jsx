@@ -1,5 +1,3 @@
-import ConfirmBox from "./confirmBox";
-
 function CartList({onRemoveItem, cart = [], currentTotalQuantity = 0, currentTotalPrice}) {
     const confirmOrder = () => {
         const ConfirmedBox = document.querySelector('.confirmedLayout').classList.add('active');
@@ -10,7 +8,7 @@ function CartList({onRemoveItem, cart = [], currentTotalQuantity = 0, currentTot
             <h2 className="text-2xl font-bold text-red pb-6">Your Cart {`(${currentTotalQuantity})`}</h2>
             {cart.length === 0 ? (
                 <div className="flex flex-col items-center">
-                    <img className="mb-6" src="/src/assets/images/illustration-empty-cart.svg" alt="empty cart image" />
+                    <img className="mb-6" src="./assets/images/illustration-empty-cart.svg" alt="empty cart image" />
                     <p className="mb-6 text-rose-500 font-semibold">Your added items will appear here</p>
                 </div>
             ) : (
